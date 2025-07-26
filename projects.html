@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<script src="/js/theme-toggle.js"></script>
+
+<body class="home">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logoLink">
+                    <img src="/images/alexyoung-high-resolution-logo-thin.png" alt="Logo" class="logo" />
+                </a>
+            </div>
+
+            <div class="navbar-right">
+                <button id="toggleTheme" class="toggle-btn">Come to the dark side... 🌙</button>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="projects.html" class="nav-btn">Projects</a>
+                    <a href="contacts.html" class="nav-btn">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main id="page-content">
+        <h1>Projects</h1>
+        <p>Here are a few things I've built or contributed to:</p>
+
+        <section class="projects-grid">
+            <div class="project-card">
+                <h2>Fitness Friend</h2>
+                <p>Application to track workouts and find the exercises mid-workout that you knew you wanted to do
+                    before the blood left
+                    your head after your first couple sets.</p>
+
+                <p>Built on ASP .NET and Angular with a PostgreSQL database holding all the data.</p>
+                <p>Eventually hosted on Azure when I get the time and motivation.</p>
+                <p>I need this personally as my fiancé is a physical therapist and needs to remind me what exercises to
+                    do for all my aches and pains that I bug her about. The goal is to minimize my bothering her with
+                    complaints and
+                    questions, so maybe the project is for her after all. </p>
+                <div class="projects-button-group">
+                    <a href="https://github.com/atyalexyoung/FitnessApp" target="_blank">View on GitHub</a>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1"
+                        target="_blank">See Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>Another Cool Project</h2>
+                <p>Maybe a simulation app? A tool for work? Mention the stack and your role.</p>
+                <div class="projects-button-group">
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h2>And another one</h2>
+                <p>Maybe a simulation app? A tool for work? Mention the stack and your role.</p>
+                <div class="projects-button-group">
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

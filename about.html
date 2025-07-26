@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+
+<script src="/js/theme-toggle.js"></script>
+
+<body class="home">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logoLink">
+                    <img src="/images/alexyoung-high-resolution-logo-thin.png" alt="Logo" class="logo" />
+                </a>
+            </div>
+
+            <div class="navbar-right">
+                <button id="toggleTheme" class="toggle-btn">Come to the dark side... 🌙</button>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="projects.html" class="nav-btn">Projects</a>
+                    <a href="contacts.html" class="nav-btn">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main id="page-content">
+        <h1>About Me</h1>
+        <p class="about-subtitle">Debugging code to breakdowns and lifting weights to hardstyle</p>
+
+        <div class="profile-flex">
+            <div class="profile-pic-container">
+                <img src="/images/headshot.png" alt="Alex Young profile photo" class="profile-pic" />
+            </div>
+
+            <section class="about-section">
+                <p>Hello! My name is <strong>Alex Young</strong>.</p>
+
+                <p>I’m a software engineer focused on .NET and C#, building modular, scalable applications from the UI
+                    to system-level components. I enjoy working across the stack, from software architecture and design,
+                    to solving integration challenges and improving user experience.</p>
+
+                <p>My recent work centers on simulation and training software, where I collaborate across disciplines to
+                    create real-time, data-driven applications. I also have experience developing internal tools and
+                    microservices that support development workflows.</p>
+
+                <p>Outside of work, I write and produce music, lift weights, game, and spend time outdoors with my
+                    fiancé and our cats. I love building tools that solve real problems and I’m always looking for
+                    opportunities to grow and contribute to meaningful software.</p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
+
+</html>

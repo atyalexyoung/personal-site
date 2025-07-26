@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Young</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<script src="/js/theme-toggle.js"></script>
+
+<body class="home">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="index.html" class="logoLink">
+                    <img src="/images/alexyoung-high-resolution-logo-thin.png" alt="Logo" class="logo" />
+                </a>
+            </div>
+
+            <div class="navbar-right">
+                <button id="toggleTheme" class="toggle-btn">Come to the dark side... 🌙</button>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="projects.html" class="nav-btn">Projects</a>
+                    <a href="contacts.html" class="nav-btn">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main id="page-content">
+        <h1>Hi, I'm Alex Young</h1>
+
+        <p class="welcome">Welcome to my personal site! There's just a bit about me, what I'm doing, what I want to
+            doing, and how to learn some more by getting in touch. Thanks for coming and taking a look around!</p>
+
+        <div class="home-buttons">
+            <a href="about.html" class="nav-btn">More About Me</a>
+            <a href="projects.html" class="nav-btn">See My Work</a>
+            <a href="contacts.html" class="nav-btn">Get in Touch</a>
+        </div>
+    </main>
+</body>
+
+</html>
