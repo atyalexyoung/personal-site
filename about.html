@@ -2,8 +2,14 @@
 <html lang="en">
 
 <head>
-    <base href="/personal-site/">
-
+    <script>
+        // Only set base href if running on GitHub Pages
+        if (location.hostname === "yourusername.github.io") {
+            const base = document.createElement("base");
+            base.href = "/your-repo-name/"; // <-- set this to match your repo name
+            document.head.appendChild(base);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
@@ -15,7 +21,7 @@
     </script>
 </head>
 
-<script src="js/theme-toggle.js"></script>
+<script src="js/script.js"></script>
 
 <body class="home">
     <nav class="navbar">

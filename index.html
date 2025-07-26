@@ -2,8 +2,14 @@
 <html lang="en">
 
 <head>
-    <base href="/personal-site/">
-
+    <script>
+        // Only set base href if running on GitHub Pages
+        if (location.hostname === "yourusername.github.io") {
+            const base = document.createElement("base");
+            base.href = "/your-repo-name/"; // <-- set this to match your repo name
+            document.head.appendChild(base);
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Young</title>
@@ -14,7 +20,7 @@
         }
     </script>
 </head>
-<script src=js/theme-toggle.js"></script>
+<script src="js/script.js"></script>
 
 <body class="home">
     <nav class="navbar">
@@ -43,7 +49,7 @@
 
         <p class="welcome">Welcome to my personal site! There's just a bit about me, what I'm doing, what I want to
             doing, and how to learn some more by getting in touch. Thanks for coming and taking a look around!</p>
-        <p>P.S. The site is still under development so sorry for any bugs/mistakes!</p>
+        <p class="welcome">P.S. The site is still under development so sorry for any bugs/mistakes!</p>
 
         <div class="home-buttons">
             <a href="about.html" class="nav-btn">More About Me</a>
